@@ -1,4 +1,4 @@
-// Invert a binary tree
+//Invert a binary tree
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
