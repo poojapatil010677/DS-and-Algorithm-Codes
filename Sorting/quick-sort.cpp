@@ -11,6 +11,7 @@ worst case in when the pivot is either the smallest or the largest element prese
 
 /* The main function that implements QuickSort
  arr[] --> Array to be sorted,    low  --> Starting index,   high  --> Ending index
+*/
 void quickSort(int arr[], int low, int high) {
     if (low < high)     {
         // pi is partitioning index, arr[p] is now  at right place
@@ -19,7 +20,7 @@ void quickSort(int arr[], int low, int high) {
         quickSort(arr, low, pi - 1);
         quickSort(arr, pi + 1, high);
     }
-}*/
+}
 
 void swap(int* a, int* b)
 {
@@ -31,9 +32,9 @@ void swap(int* a, int* b)
 /* This function takes last element as pivot, places  the pivot element 
    at its correct position in sorted  array, and places all smaller (smaller
    than pivot) to left of pivot and all greater elements to right  of pivot */
+
 int partition (int arr[], int low, int high)
 {
-   // Your code here
    int pivot = arr[high];
    int i= low-1;
    
